@@ -1,4 +1,9 @@
+.idea
 /bootstrap/compiled.php
 .env.*.php
 .env.php
 .env
+composer.phar
+composer.lock
+vendor
+node_modules
