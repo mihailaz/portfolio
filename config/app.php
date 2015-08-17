@@ -26,7 +26,7 @@ return [
     |
     */
 
-    'url' => 'http://localhost',
+    'url' => 'http://portfolio.local',
 
     /*
     |--------------------------------------------------------------------------
@@ -39,7 +39,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'Europe/Moscow',
 
     /*
     |--------------------------------------------------------------------------
@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'ru',
 
     /*
     |--------------------------------------------------------------------------
@@ -144,6 +144,15 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+		// ide helper
+	    Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+
+	    // socialite
+//	    Laravel\Socialite\SocialiteServiceProvider::class,
+	    SocialiteProviders\Manager\ServiceProvider::class,
+
+	    // Html and Form facades
+	    Collective\Html\HtmlServiceProvider::class,
     ],
 
     /*
@@ -192,6 +201,9 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
 
+	    'Socialite' => Laravel\Socialite\Facades\Socialite::class,
+	    'Form' => Collective\Html\FormFacade::class,
+	    'Html' => Collective\Html\HtmlFacade::class,
     ],
 
 ];

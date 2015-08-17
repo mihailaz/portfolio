@@ -1,0 +1,47 @@
+/**
+ * User: Michael Lazarev <mihailaz.90@gmail.com>
+ * Date: 13.08.15
+ * Time: 23:39
+ */
+
+html, body {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	display: table;
+	font-weight: 100;
+	font-family: 'Lato';
+}
+
+.jumbotron {
+	background-color: transparent;
+}
+
+form.form-inline {
+	display: inline;
+}
+
+textarea.noresize {
+	resize: none;
+}
+
+.btn-vk, .btn-fb {
+	color: #ffffff;
+	border-color: transparent;
+}
+
+.btn-vk {
+	background-color: #597DA3;
+}
+
+.btn-fb {
+	background-color: #4e69a2;
+}
+
+img {
+	max-width: 100%;
+}

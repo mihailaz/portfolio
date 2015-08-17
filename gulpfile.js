@@ -11,6 +11,16 @@ var elixir = require('laravel-elixir');
  |
  */
 
-elixir(function(mix) {
-    mix.sass('app.scss');
+elixir(function(mix){
+	mix.styles([
+		'*.css',
+		'../../bower_components/ekko-lightbox/dist/ekko-lightbox.css'
+	], 'public/build/css/portfolio.css')
+		.scripts([
+			'../../bower_components/jquery/dist/jquery.js',
+			'../../bower_components/bootstrap/dist/js/bootstrap.js',
+			'../../bower_components/ekko-lightbox/dist/ekko-lightbox.js',
+			'*.js'
+		], 'public/build/js/portfolio.js')
+		.copy('resources/bower_components/bootstrap/dist/fonts', 'public/build/fonts');
 });
