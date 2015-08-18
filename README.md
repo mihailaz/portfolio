@@ -1,15 +1,12 @@
 # devPortfolio
-==============
 
-# Requirements
---------------
+### Requirements
 - php >= 5.5
 - npm
 - bower
 - gulp
 
-# Installation
---------------
+### Installation
 - php composer.phar install
 - npm install
 - bower install
